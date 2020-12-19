@@ -30,19 +30,33 @@
 		 <!-- type -->
 		  <p> Fournisseur: </p>
 		  <input id="Volkswagen" type="radio" name="fournisseur" value="VW" style="width:40px" required>
-		  <label for="Volkswagen">Volkswagen</label><br>
+		  <label for="Volkswagen"><img src="img/vw.jpg" alt="vw" width="55" height="55"></label>
 		  <input id="Audi" type="radio" name="fournisseur" value="Audi" style="width:40px" required> 
-		  <label for="Audi">Audi</label><br>
+		  <label for="Audi"><img src="img/audi.jpg" alt="audi" width="55" height="55"></label><br>
 		  <br>
 		 <!-- bouton -->
 		  <input type="submit" value="Ajouter">
 		</fieldset>
 	  </form>
+	  	     <!-- Trier tableau par quantité -->
+    <div id="trier">
+      <button type="button" onclick="afficherQuantiteTrier();">Trier par quantité</button>
+	  <button type="button" onclick="trierParFournisseur();">Trier par fournisseur</button>
+	  <button type="button" onclick="trierParCarrosserie();">Trier par carrosserie</button> 
+	  <button type="button" onclick="aCommander();">Liste à commander</button>
+	  
+    </div>
+    <hr>
 	   <!-- zone d'affichage -->
 	  <section>
 		
 	  </section>
-	         
+	 
+	 <!--FOOTER-->		
+		<footer>
+			<a href="http://www.audi.be/">Site Audi</a> <br>
+			<a href="http://www.Volkswagen.be/">Site Volkswagen</a>
+	    </footer>
   </body>
 </html>
 
